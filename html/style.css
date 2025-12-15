@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+#hud-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+}
+
+#top-right {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-end;
+}
+
+#logo {
+    width: 140px;
+    height: auto;
+    display: block;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.6));
+}
+
+#top-left {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon {
+    color: white;
+    font-size: 14px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8), 0 0 3px rgba(0, 0, 0, 0.9);
+}
+
+.icon-bar {
+    color: white;
+    font-size: 13px;
+    min-width: 20px;
+    text-align: center;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8), 0 0 3px rgba(0, 0, 0, 0.9);
+}
+
+.value {
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8), 0 0 3px rgba(0, 0, 0, 0.9);
+}
+
+#bottom-right {
+    position: absolute;
+    bottom: 120px;
+    left: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.bar-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bar-wrapper {
+    width: 160px;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1.5px solid rgba(255, 255, 255, 0.3);
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.bar {
+    height: 100%;
+    width: 100%;
+    background: white;
+    transition: width 0.3s ease;
+    border-radius: 4px;
+    position: relative;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+.bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2), transparent);
+    border-radius: 4px 4px 0 0;
+    pointer-events: none;
+}

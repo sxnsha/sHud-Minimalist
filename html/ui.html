@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUD Minimaliste</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="hud-container">
+        <div id="top-right">
+            <img id="logo" src="logo.png" alt="Logo Serveur">
+            
+            <div class="info-item" id="id-item">
+                <i class="fa-solid fa-user icon"></i>
+                <span class="value" id="player-id">0</span>
+            </div>
+            <div class="info-item" id="money-item">
+                <i class="fa-solid fa-wallet icon"></i>
+                <span class="value" id="money">$0</span>
+            </div>
+            <div class="info-item" id="bank-item">
+                <i class="fa-solid fa-building-columns icon"></i>
+                <span class="value" id="bank">$0</span>
+            </div>
+        </div>
+
+        <div id="top-left">
+        </div>
+
+        <div id="bottom-right">
+            <div class="bar-container" id="health-container">
+                <i class="fa-solid fa-heart icon-bar"></i>
+                <div class="bar-wrapper">
+                    <div class="bar" id="health-bar"></div>
+                </div>
+            </div>
+
+            <div class="bar-container" id="armor-container" style="display: none;">
+                <i class="fa-solid fa-shield icon-bar"></i>
+                <div class="bar-wrapper">
+                    <div class="bar" id="armor-bar"></div>
+                </div>
+            </div>
+
+            <div class="bar-container" id="hunger-container" style="display: none;">
+                <i class="fa-solid fa-burger icon-bar"></i>
+                <div class="bar-wrapper">
+                    <div class="bar" id="hunger-bar"></div>
+                </div>
+            </div>
+
+            <div class="bar-container" id="thirst-container" style="display: none;">
+                <i class="fa-solid fa-droplet icon-bar"></i>
+                <div class="bar-wrapper">
+                    <div class="bar" id="thirst-bar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
