@@ -1,26 +1,37 @@
 # sHud-Minimalist
-HUD minimaliste pour FiveM
+A clean and minimalist HUD for FiveM servers using ESX.
 
-**Dependencies** : 
-- es_extended
-- esx_status (Optional)
+This HUD focuses on simplicity and performance, providing essential player information without cluttering the screen.
+
+# Features :
+
+## Status HUD
+Health bar
+Armour bar
+Hunger bar (requires esx_status)
+Thirst bar (requires esx_status)
+Hunger and thirst bars are automatically hidden if esx_status is not installed
+
+## Main HUD
+
+Bank money display
+Cash / item money
+Player ID
+
+## Performance
+
+Client-side only
+Idle usage: ~0.00 ms
+In-game usage: ~0.01–0.02 ms
+No server-side logic
+
+## Dependencies
+
+es_extended
+esx_status (optional)
 
 
-**Status HUD - Health & Armour** 
-- 4 bars for Health, Armour, Hunger and Thirst
-- Hunger and Thirst disapear if you don't have esx_status
+## Support
 
-**Main HUD - Money and ID**
-- Bank Money
-- Money item or pocket money
-- Your ID
-
-
-[Download](https://github.com/sxnsha/sHud-Minimalist)
-
-
-## Support & Feedback
-
-Found a bug? Have a suggestion?
-
-* Join our [Discord](https://discord.gg/XZ483fVbJs)
+For bug reports or suggestions:
+Discord: https://discord.gg/XZ483fVbJs
